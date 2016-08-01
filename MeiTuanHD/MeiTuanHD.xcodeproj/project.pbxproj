@@ -10,6 +10,10 @@
 		FD7783E51D4F3DA500429F8C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FD7783E41D4F3DA500429F8C /* main.m */; };
 		FD7783E81D4F3DA500429F8C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FD7783E71D4F3DA500429F8C /* AppDelegate.m */; };
 		FD7783F01D4F3DA500429F8C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD7783EF1D4F3DA500429F8C /* Assets.xcassets */; };
+		FD7784021D4F3EC600429F8C /* MTBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD7784011D4F3EC600429F8C /* MTBaseViewController.m */; };
+		FD7784051D4F3EDE00429F8C /* MTBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = FD7784041D4F3EDE00429F8C /* MTBaseView.m */; };
+		FD7784081D4F3F0700429F8C /* MTMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD7784071D4F3F0700429F8C /* MTMainViewController.m */; };
+		FD77840B1D4F3F3800429F8C /* MTHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD77840A1D4F3F3800429F8C /* MTHomeViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,14 @@
 		FD7783E71D4F3DA500429F8C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		FD7783EF1D4F3DA500429F8C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FD7783F41D4F3DA500429F8C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD7784001D4F3EC600429F8C /* MTBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTBaseViewController.h; sourceTree = "<group>"; };
+		FD7784011D4F3EC600429F8C /* MTBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTBaseViewController.m; sourceTree = "<group>"; };
+		FD7784031D4F3EDE00429F8C /* MTBaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTBaseView.h; sourceTree = "<group>"; };
+		FD7784041D4F3EDE00429F8C /* MTBaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTBaseView.m; sourceTree = "<group>"; };
+		FD7784061D4F3F0700429F8C /* MTMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTMainViewController.h; sourceTree = "<group>"; };
+		FD7784071D4F3F0700429F8C /* MTMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTMainViewController.m; sourceTree = "<group>"; };
+		FD7784091D4F3F3800429F8C /* MTHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTHomeViewController.h; sourceTree = "<group>"; };
+		FD77840A1D4F3F3800429F8C /* MTHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTHomeViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +94,8 @@
 		FD7783FB1D4F3E2300429F8C /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				FD7784091D4F3F3800429F8C /* MTHomeViewController.h */,
+				FD77840A1D4F3F3800429F8C /* MTHomeViewController.m */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -89,6 +103,10 @@
 		FD7783FC1D4F3E2300429F8C /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				FD7783FF1D4F3E8E00429F8C /* BaseViewController */,
+				FD7783FE1D4F3E8E00429F8C /* BaseView */,
+				FD7784061D4F3F0700429F8C /* MTMainViewController.h */,
+				FD7784071D4F3F0700429F8C /* MTMainViewController.m */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -98,6 +116,24 @@
 			children = (
 			);
 			path = Tools;
+			sourceTree = "<group>";
+		};
+		FD7783FE1D4F3E8E00429F8C /* BaseView */ = {
+			isa = PBXGroup;
+			children = (
+				FD7784031D4F3EDE00429F8C /* MTBaseView.h */,
+				FD7784041D4F3EDE00429F8C /* MTBaseView.m */,
+			);
+			path = BaseView;
+			sourceTree = "<group>";
+		};
+		FD7783FF1D4F3E8E00429F8C /* BaseViewController */ = {
+			isa = PBXGroup;
+			children = (
+				FD7784001D4F3EC600429F8C /* MTBaseViewController.h */,
+				FD7784011D4F3EC600429F8C /* MTBaseViewController.m */,
+			);
+			path = BaseViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -169,7 +205,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				FD7783E81D4F3DA500429F8C /* AppDelegate.m in Sources */,
+				FD7784081D4F3F0700429F8C /* MTMainViewController.m in Sources */,
 				FD7783E51D4F3DA500429F8C /* main.m in Sources */,
+				FD7784051D4F3EDE00429F8C /* MTBaseView.m in Sources */,
+				FD77840B1D4F3F3800429F8C /* MTHomeViewController.m in Sources */,
+				FD7784021D4F3EC600429F8C /* MTBaseViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
