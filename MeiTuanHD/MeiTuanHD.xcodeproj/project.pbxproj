@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		8AFD745BC0BA77BC322FF2CE /* libPods-MeiTuanHD.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A7D9787C91DE6CC50F83D98 /* libPods-MeiTuanHD.a */; };
+		FD04D38E1D4F67C300766FBB /* categories.plist in Resources */ = {isa = PBXBuildFile; fileRef = FD04D38A1D4F67C300766FBB /* categories.plist */; };
+		FD04D38F1D4F67C300766FBB /* cities.plist in Resources */ = {isa = PBXBuildFile; fileRef = FD04D38B1D4F67C300766FBB /* cities.plist */; };
+		FD04D3901D4F67C300766FBB /* cityGroups.plist in Resources */ = {isa = PBXBuildFile; fileRef = FD04D38C1D4F67C300766FBB /* cityGroups.plist */; };
+		FD04D3911D4F67C300766FBB /* sorts.plist in Resources */ = {isa = PBXBuildFile; fileRef = FD04D38D1D4F67C300766FBB /* sorts.plist */; };
 		FD7783E51D4F3DA500429F8C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FD7783E41D4F3DA500429F8C /* main.m */; };
 		FD7783E81D4F3DA500429F8C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FD7783E71D4F3DA500429F8C /* AppDelegate.m */; };
 		FD7783F01D4F3DA500429F8C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD7783EF1D4F3DA500429F8C /* Assets.xcassets */; };
@@ -22,6 +26,10 @@
 		0A7D9787C91DE6CC50F83D98 /* libPods-MeiTuanHD.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MeiTuanHD.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DC000102BA7AE11589EA293 /* Pods-MeiTuanHD.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeiTuanHD.release.xcconfig"; path = "Pods/Target Support Files/Pods-MeiTuanHD/Pods-MeiTuanHD.release.xcconfig"; sourceTree = "<group>"; };
 		ED7C669DC78A84E034923243 /* Pods-MeiTuanHD.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeiTuanHD.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MeiTuanHD/Pods-MeiTuanHD.debug.xcconfig"; sourceTree = "<group>"; };
+		FD04D38A1D4F67C300766FBB /* categories.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = categories.plist; sourceTree = "<group>"; };
+		FD04D38B1D4F67C300766FBB /* cities.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = cities.plist; sourceTree = "<group>"; };
+		FD04D38C1D4F67C300766FBB /* cityGroups.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = cityGroups.plist; sourceTree = "<group>"; };
+		FD04D38D1D4F67C300766FBB /* sorts.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = sorts.plist; sourceTree = "<group>"; };
 		FD7783E01D4F3DA500429F8C /* MeiTuanHD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MeiTuanHD.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD7783E41D4F3DA500429F8C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FD7783E61D4F3DA500429F8C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -70,6 +78,17 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		FD04D3891D4F67C300766FBB /* Plist */ = {
+			isa = PBXGroup;
+			children = (
+				FD04D38A1D4F67C300766FBB /* categories.plist */,
+				FD04D38B1D4F67C300766FBB /* cities.plist */,
+				FD04D38C1D4F67C300766FBB /* cityGroups.plist */,
+				FD04D38D1D4F67C300766FBB /* sorts.plist */,
+			);
+			path = Plist;
+			sourceTree = "<group>";
+		};
 		FD7783D71D4F3DA500429F8C = {
 			isa = PBXGroup;
 			children = (
@@ -103,8 +122,8 @@
 		FD7783E31D4F3DA500429F8C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				FD04D3891D4F67C300766FBB /* Plist */,
 				FD7784101D4F465300429F8C /* PrefixHeader.pch */,
-				FD77840D1D4F41AB00429F8C /* PlistFile */,
 				FD7783EF1D4F3DA500429F8C /* Assets.xcassets */,
 				FD7783F41D4F3DA500429F8C /* Info.plist */,
 				FD7783E41D4F3DA500429F8C /* main.m */,
@@ -168,13 +187,6 @@
 			path = BaseViewController;
 			sourceTree = "<group>";
 		};
-		FD77840D1D4F41AB00429F8C /* PlistFile */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = PlistFile;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -236,7 +248,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD04D38F1D4F67C300766FBB /* cities.plist in Resources */,
+				FD04D38E1D4F67C300766FBB /* categories.plist in Resources */,
+				FD04D3911D4F67C300766FBB /* sorts.plist in Resources */,
 				FD7783F01D4F3DA500429F8C /* Assets.xcassets in Resources */,
+				FD04D3901D4F67C300766FBB /* cityGroups.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
