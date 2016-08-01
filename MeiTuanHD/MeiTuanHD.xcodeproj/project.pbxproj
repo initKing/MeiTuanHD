@@ -397,6 +397,7 @@
 			baseConfigurationReference = ED7C669DC78A84E034923243 /* Pods-MeiTuanHD.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				GCC_PREFIX_HEADER = MeiTuanHD/PrefixHeader.pch;
 				INFOPLIST_FILE = MeiTuanHD/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -412,6 +413,7 @@
 			baseConfigurationReference = 6DC000102BA7AE11589EA293 /* Pods-MeiTuanHD.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				GCC_PREFIX_HEADER = MeiTuanHD/PrefixHeader.pch;
 				INFOPLIST_FILE = MeiTuanHD/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
