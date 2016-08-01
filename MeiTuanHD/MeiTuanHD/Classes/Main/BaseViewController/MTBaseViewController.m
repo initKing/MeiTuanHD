@@ -25,13 +25,7 @@
 }
 
 /*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
+(null): Object file (/Users/CrazyHacker/Library/Developer/Xcode/DerivedData/MeiTuanHD-gzjukjjtdkshpbcrpnbkagnhvrko/Build/Products/Debug-iphonesimulator/libPods-MeiTuanHD.a(Pods-MeiTuanHD-dummy.o)) was built for newer iOS version (9.0) than being linked (8.0)
 */
 
 @end

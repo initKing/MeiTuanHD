@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8AFD745BC0BA77BC322FF2CE /* libPods-MeiTuanHD.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A7D9787C91DE6CC50F83D98 /* libPods-MeiTuanHD.a */; };
 		FD7783E51D4F3DA500429F8C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FD7783E41D4F3DA500429F8C /* main.m */; };
 		FD7783E81D4F3DA500429F8C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FD7783E71D4F3DA500429F8C /* AppDelegate.m */; };
 		FD7783F01D4F3DA500429F8C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD7783EF1D4F3DA500429F8C /* Assets.xcassets */; };
@@ -14,9 +15,13 @@
 		FD7784051D4F3EDE00429F8C /* MTBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = FD7784041D4F3EDE00429F8C /* MTBaseView.m */; };
 		FD7784081D4F3F0700429F8C /* MTMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD7784071D4F3F0700429F8C /* MTMainViewController.m */; };
 		FD77840B1D4F3F3800429F8C /* MTHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD77840A1D4F3F3800429F8C /* MTHomeViewController.m */; };
+		FD7784131D4F5D4700429F8C /* MTNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD7784121D4F5D4700429F8C /* MTNavigationController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0A7D9787C91DE6CC50F83D98 /* libPods-MeiTuanHD.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MeiTuanHD.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6DC000102BA7AE11589EA293 /* Pods-MeiTuanHD.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeiTuanHD.release.xcconfig"; path = "Pods/Target Support Files/Pods-MeiTuanHD/Pods-MeiTuanHD.release.xcconfig"; sourceTree = "<group>"; };
+		ED7C669DC78A84E034923243 /* Pods-MeiTuanHD.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeiTuanHD.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MeiTuanHD/Pods-MeiTuanHD.debug.xcconfig"; sourceTree = "<group>"; };
 		FD7783E01D4F3DA500429F8C /* MeiTuanHD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MeiTuanHD.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD7783E41D4F3DA500429F8C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FD7783E61D4F3DA500429F8C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -32,6 +37,8 @@
 		FD7784091D4F3F3800429F8C /* MTHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTHomeViewController.h; sourceTree = "<group>"; };
 		FD77840A1D4F3F3800429F8C /* MTHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTHomeViewController.m; sourceTree = "<group>"; };
 		FD7784101D4F465300429F8C /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		FD7784111D4F5D4700429F8C /* MTNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTNavigationController.h; sourceTree = "<group>"; };
+		FD7784121D4F5D4700429F8C /* MTNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTNavigationController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,17 +46,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8AFD745BC0BA77BC322FF2CE /* libPods-MeiTuanHD.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		62F1F53E604081143B777C4A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				ED7C669DC78A84E034923243 /* Pods-MeiTuanHD.debug.xcconfig */,
+				6DC000102BA7AE11589EA293 /* Pods-MeiTuanHD.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D83401308CE3D3732C9081C8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0A7D9787C91DE6CC50F83D98 /* libPods-MeiTuanHD.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		FD7783D71D4F3DA500429F8C = {
 			isa = PBXGroup;
 			children = (
 				FD7783E21D4F3DA500429F8C /* MeiTuanHD */,
 				FD7783E11D4F3DA500429F8C /* Products */,
+				62F1F53E604081143B777C4A /* Pods */,
+				D83401308CE3D3732C9081C8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -135,6 +162,8 @@
 			children = (
 				FD7784001D4F3EC600429F8C /* MTBaseViewController.h */,
 				FD7784011D4F3EC600429F8C /* MTBaseViewController.m */,
+				FD7784111D4F5D4700429F8C /* MTNavigationController.h */,
+				FD7784121D4F5D4700429F8C /* MTNavigationController.m */,
 			);
 			path = BaseViewController;
 			sourceTree = "<group>";
@@ -153,9 +182,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FD7783F71D4F3DA500429F8C /* Build configuration list for PBXNativeTarget "MeiTuanHD" */;
 			buildPhases = (
+				8F3FD98970AB84EE74224FEE /* [CP] Check Pods Manifest.lock */,
 				FD7783DC1D4F3DA500429F8C /* Sources */,
 				FD7783DD1D4F3DA500429F8C /* Frameworks */,
 				FD7783DE1D4F3DA500429F8C /* Resources */,
+				E690B7B6BF4B4630EF276D2E /* [CP] Embed Pods Frameworks */,
+				E46D712BAFA62F32D0491E8D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -172,6 +204,7 @@
 		FD7783D81D4F3DA500429F8C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = MT;
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = CrazyHacker;
 				TargetAttributes = {
@@ -209,12 +242,61 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		8F3FD98970AB84EE74224FEE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E46D712BAFA62F32D0491E8D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MeiTuanHD/Pods-MeiTuanHD-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E690B7B6BF4B4630EF276D2E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MeiTuanHD/Pods-MeiTuanHD-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		FD7783DC1D4F3DA500429F8C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				FD7783E81D4F3DA500429F8C /* AppDelegate.m in Sources */,
+				FD7784131D4F5D4700429F8C /* MTNavigationController.m in Sources */,
 				FD7784081D4F3F0700429F8C /* MTMainViewController.m in Sources */,
 				FD7783E51D4F3DA500429F8C /* main.m in Sources */,
 				FD7784051D4F3EDE00429F8C /* MTBaseView.m in Sources */,
@@ -312,6 +394,7 @@
 		};
 		FD7783F81D4F3DA500429F8C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ED7C669DC78A84E034923243 /* Pods-MeiTuanHD.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PREFIX_HEADER = MeiTuanHD/PrefixHeader.pch;
@@ -326,6 +409,7 @@
 		};
 		FD7783F91D4F3DA500429F8C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6DC000102BA7AE11589EA293 /* Pods-MeiTuanHD.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PREFIX_HEADER = MeiTuanHD/PrefixHeader.pch;
@@ -357,6 +441,7 @@
 				FD7783F91D4F3DA500429F8C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

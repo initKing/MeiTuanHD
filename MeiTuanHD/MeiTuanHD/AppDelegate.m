@@ -20,9 +20,13 @@
     
     Class cls = NSClassFromString(@"MTMainViewController");
     NSAssert([cls isSubclassOfClass:[UIViewController class]], @"传入了错误的类");
+    Class nvcCls = NSClassFromString(@"MTNavigationController");
+    NSAssert([nvcCls isSubclassOfClass:[UIViewController class]], @"传入了错误的错误的类");
     
     UIViewController *vc = [[cls alloc] init];
-    self.window.rootViewController = vc;
+    UINavigationController *nvc = [[nvcCls alloc] initWithRootViewController:vc];
+    
+    self.window.rootViewController = nvc;
     [self.window makeKeyAndVisible];
     
     return YES;
