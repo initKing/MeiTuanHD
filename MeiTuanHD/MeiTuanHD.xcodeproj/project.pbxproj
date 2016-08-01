@@ -12,6 +12,9 @@
 		FD04D38F1D4F67C300766FBB /* cities.plist in Resources */ = {isa = PBXBuildFile; fileRef = FD04D38B1D4F67C300766FBB /* cities.plist */; };
 		FD04D3901D4F67C300766FBB /* cityGroups.plist in Resources */ = {isa = PBXBuildFile; fileRef = FD04D38C1D4F67C300766FBB /* cityGroups.plist */; };
 		FD04D3911D4F67C300766FBB /* sorts.plist in Resources */ = {isa = PBXBuildFile; fileRef = FD04D38D1D4F67C300766FBB /* sorts.plist */; };
+		FD04D3951D4F6CBF00766FBB /* UIButton+MTButton.m in Sources */ = {isa = PBXBuildFile; fileRef = FD04D3941D4F6CBF00766FBB /* UIButton+MTButton.m */; };
+		FD04D3981D4F721A00766FBB /* MTCategoryView.m in Sources */ = {isa = PBXBuildFile; fileRef = FD04D3971D4F721A00766FBB /* MTCategoryView.m */; };
+		FD04D39A1D4F723600766FBB /* MTCategoryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD04D3991D4F723600766FBB /* MTCategoryView.xib */; };
 		FD7783E51D4F3DA500429F8C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FD7783E41D4F3DA500429F8C /* main.m */; };
 		FD7783E81D4F3DA500429F8C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FD7783E71D4F3DA500429F8C /* AppDelegate.m */; };
 		FD7783F01D4F3DA500429F8C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD7783EF1D4F3DA500429F8C /* Assets.xcassets */; };
@@ -30,6 +33,11 @@
 		FD04D38B1D4F67C300766FBB /* cities.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = cities.plist; sourceTree = "<group>"; };
 		FD04D38C1D4F67C300766FBB /* cityGroups.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = cityGroups.plist; sourceTree = "<group>"; };
 		FD04D38D1D4F67C300766FBB /* sorts.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = sorts.plist; sourceTree = "<group>"; };
+		FD04D3931D4F6CBF00766FBB /* UIButton+MTButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+MTButton.h"; sourceTree = "<group>"; };
+		FD04D3941D4F6CBF00766FBB /* UIButton+MTButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+MTButton.m"; sourceTree = "<group>"; };
+		FD04D3961D4F721A00766FBB /* MTCategoryView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTCategoryView.h; sourceTree = "<group>"; };
+		FD04D3971D4F721A00766FBB /* MTCategoryView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTCategoryView.m; sourceTree = "<group>"; };
+		FD04D3991D4F723600766FBB /* MTCategoryView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MTCategoryView.xib; sourceTree = "<group>"; };
 		FD7783E01D4F3DA500429F8C /* MeiTuanHD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MeiTuanHD.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD7783E41D4F3DA500429F8C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FD7783E61D4F3DA500429F8C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -87,6 +95,18 @@
 				FD04D38D1D4F67C300766FBB /* sorts.plist */,
 			);
 			path = Plist;
+			sourceTree = "<group>";
+		};
+		FD04D3921D4F6CA200766FBB /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				FD04D3931D4F6CBF00766FBB /* UIButton+MTButton.h */,
+				FD04D3941D4F6CBF00766FBB /* UIButton+MTButton.m */,
+				FD04D3961D4F721A00766FBB /* MTCategoryView.h */,
+				FD04D3971D4F721A00766FBB /* MTCategoryView.m */,
+				FD04D3991D4F723600766FBB /* MTCategoryView.xib */,
+			);
+			path = Category;
 			sourceTree = "<group>";
 		};
 		FD7783D71D4F3DA500429F8C = {
@@ -152,6 +172,7 @@
 		FD7783FC1D4F3E2300429F8C /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				FD04D3921D4F6CA200766FBB /* Category */,
 				FD7783FF1D4F3E8E00429F8C /* BaseViewController */,
 				FD7783FE1D4F3E8E00429F8C /* BaseView */,
 				FD7784061D4F3F0700429F8C /* MTMainViewController.h */,
@@ -251,6 +272,7 @@
 				FD04D38F1D4F67C300766FBB /* cities.plist in Resources */,
 				FD04D38E1D4F67C300766FBB /* categories.plist in Resources */,
 				FD04D3911D4F67C300766FBB /* sorts.plist in Resources */,
+				FD04D39A1D4F723600766FBB /* MTCategoryView.xib in Resources */,
 				FD7783F01D4F3DA500429F8C /* Assets.xcassets in Resources */,
 				FD04D3901D4F67C300766FBB /* cityGroups.plist in Resources */,
 			);
@@ -311,8 +333,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD04D3951D4F6CBF00766FBB /* UIButton+MTButton.m in Sources */,
 				FD7783E81D4F3DA500429F8C /* AppDelegate.m in Sources */,
 				FD7784131D4F5D4700429F8C /* MTNavigationController.m in Sources */,
+				FD04D3981D4F721A00766FBB /* MTCategoryView.m in Sources */,
 				FD7784081D4F3F0700429F8C /* MTMainViewController.m in Sources */,
 				FD7783E51D4F3DA500429F8C /* main.m in Sources */,
 				FD7784051D4F3EDE00429F8C /* MTBaseView.m in Sources */,

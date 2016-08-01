@@ -13,11 +13,13 @@
 @end
 
 @implementation MTNavigationController
-
++ (void)initialize {
+    UINavigationBar *navBar = [UINavigationBar appearance];
+    [navBar setBackgroundImage:[UIImage imageNamed:@"bg_navigationBar_normal"] forBarMetrics:UIBarMetricsDefault];
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+   
 }
-
 
 @end
