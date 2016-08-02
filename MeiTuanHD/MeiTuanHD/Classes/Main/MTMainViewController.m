@@ -44,7 +44,6 @@
         
         vc.modalPresentationStyle = UIModalPresentationPopover;
         UIPopoverPresentationController *poperVC = vc.popoverPresentationController;
-        
         poperVC.sourceView = view;
         poperVC.sourceRect = view.bounds;
         
