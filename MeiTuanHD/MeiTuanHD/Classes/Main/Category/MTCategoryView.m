@@ -25,4 +25,8 @@
     [self sendActionsForControlEvents:UIControlEventValueChanged];
 }
 
+- (void)awakeFromNib {
+    // 取消自动布局 -- 防止屏幕旋转
+    self.autoresizingMask = UIViewAutoresizingNone;
+}
 @end

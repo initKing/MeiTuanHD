@@ -37,18 +37,28 @@
 // 服务分类选择
 - (void)categoryChoose:(MTCategoryView *)view {
     NSLog(@"点击搜索按钮 %s -- %zd", __FUNCTION__, view.tag);
-    MTCategoryChooseView *vc = [MTCategoryChooseView new];
-    
-    vc.modalPresentationStyle = UIModalPresentationPopover;
-    
-    UIPopoverPresentationController *poperVC = vc.popoverPresentationController;
-    
-    poperVC.sourceView = view;
-    poperVC.sourceRect = view.bounds;
-    
-    [self presentViewController:vc animated:YES completion:nil];
-    
-    poperVC.sourceView = view;
+   
+    if (view.tag == 100) {
+    // 1. 分类选择按钮
+        MTCategoryChooseView *vc = [MTCategoryChooseView new];
+        
+        vc.modalPresentationStyle = UIModalPresentationPopover;
+        UIPopoverPresentationController *poperVC = vc.popoverPresentationController;
+        
+        poperVC.sourceView = view;
+        poperVC.sourceRect = view.bounds;
+        
+        [self presentViewController:vc animated:YES completion:nil];
+        return;
+    } else if (view.tag == 101) {
+    // 2. 城市选择按钮
+        
+        return;
+    } else {
+    // 3. 搜索按钮
+        
+        
+    }
 }
 
 #pragma mark - 设置左侧导航栏

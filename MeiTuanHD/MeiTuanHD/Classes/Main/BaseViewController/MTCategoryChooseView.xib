@@ -7,6 +7,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MTCategoryChooseView">
             <connections>
+                <outlet property="CategoryTableView" destination="F3O-62-gej" id="S4i-Qx-D0j"/>
+                <outlet property="DetailTableView" destination="vra-Xw-s8b" id="h3X-SN-odC"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -21,6 +23,10 @@
                     <constraints>
                         <constraint firstAttribute="width" constant="175" id="SaF-ww-l6M"/>
                     </constraints>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="Dvv-e5-kH2"/>
+                        <outlet property="delegate" destination="-1" id="pL4-5k-sPc"/>
+                    </connections>
                 </tableView>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="vra-Xw-s8b">
                     <rect key="frame" x="175" y="0.0" width="175" height="350"/>
@@ -28,6 +34,10 @@
                     <constraints>
                         <constraint firstAttribute="width" constant="175" id="cvV-cB-0tQ"/>
                     </constraints>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="GHi-lJ-V4E"/>
+                        <outlet property="delegate" destination="-1" id="N06-zW-1j0"/>
+                    </connections>
                 </tableView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
