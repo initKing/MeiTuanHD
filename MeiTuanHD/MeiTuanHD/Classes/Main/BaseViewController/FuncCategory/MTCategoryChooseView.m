@@ -67,6 +67,9 @@ static NSString *detailId = @"detailId";
         cell.textLabel.text = _functionCategoryList[indexPath.row].name;
         cell.imageView.image = [UIImage imageNamed:_functionCategoryList[indexPath.row].icon];
         cell.imageView.highlightedImage = [UIImage imageNamed:_functionCategoryList[indexPath.row].highlighted_icon];
+        if (_functionCategoryList[indexPath.row].subcategories) {
+            cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+        }
         return cell;
     } else {
         MTFuncCategoryRightCell *cell = [MTFuncCategoryRightCell detailTableViewCellWithTableView:tableView cellId:detailId];
@@ -79,8 +82,10 @@ static NSString *detailId = @"detailId";
 - (void)setupUI {
     // 左侧分类表格注册原型cell -- categoryId
     [self.CategoryTableView registerClass:[UITableViewCell class] forCellReuseIdentifier:categoryId];
-
+    self.CategoryTableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+    
     [self.DetailTableView registerClass:NSClassFromString(@"UITableViewCell") forCellReuseIdentifier:detailId];
+    self.DetailTableView.separatorStyle = UITableViewCellSeparatorStyleNone;
 }
 
 @end
