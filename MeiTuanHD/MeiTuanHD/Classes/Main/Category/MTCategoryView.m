@@ -19,4 +19,10 @@
 //    UINib *nib = [UINib nibWithNibName:@"MTCategoryView" bundle:nil];
 //    return [nib instantiateWithOwner:nil options:nil].lastObject;
 //}
+
+// 自定义控件, 发送监听事件
+- (IBAction)buttonClick:(UIButton *)sender {
+    [self sendActionsForControlEvents:UIControlEventValueChanged];
+}
+
 @end

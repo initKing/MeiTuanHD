@@ -33,25 +33,33 @@
 - (void)searchClick {
       NSLog(@"点击搜索按钮 %s", __FUNCTION__);
 }
+
+// 服务分类选择
+- (void)categoryChoose:(MTCategoryView *)view {
+    NSLog(@"点击搜索按钮 %s -- %zd", __FUNCTION__, view.tag);
+}
+
 #pragma mark - 设置左侧导航栏
 - (void)setupLeftNav {
-    // 1. logo
-    UIButton *btn = [UIButton ch_buttonWithIamge:@"icon_meituan_logo" andHightImageStr:@"icon_meituan_logo" target:nil action:nil];
-    UIBarButtonItem *leftNavItem = [[UIBarButtonItem alloc] initWithCustomView:btn];
     
-    // 2. 添加分类按钮
-    MTCategoryView *view = [MTCategoryView mtCategoryView];
-    UIBarButtonItem *cateItem = [[UIBarButtonItem alloc] initWithCustomView:view];
+    NSMutableArray <UIBarButtonItem *>*arrayM = [NSMutableArray array];
+    UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
+    [btn setImage:[UIImage imageNamed:@"icon_meituan_logo"] forState:UIControlStateSelected];
+    btn.selected = YES;
+    btn.userInteractionEnabled = NO;
+    [btn sizeToFit];
+    UIBarButtonItem *logoItem = [[UIBarButtonItem alloc] initWithCustomView:btn];
+    [arrayM addObject:logoItem];
     
-    // 2. 添加分类按钮
-    MTCategoryView *v1 = [MTCategoryView mtCategoryView];
-     UIBarButtonItem *portritItem = [[UIBarButtonItem alloc] initWithCustomView:v1];
+    for (NSInteger i = 0; i < 3; i++) {
+        MTCategoryView *view = [MTCategoryView mtCategoryView];
+        UIBarButtonItem *cateItem = [[UIBarButtonItem alloc] initWithCustomView:view];
+         [view addTarget:self action:@selector(categoryChoose:) forControlEvents:UIControlEventValueChanged];
+        [arrayM addObject:cateItem];
+        view.tag = 100 + i;
+    }
     
-    // 2. 添加分类按钮
-    MTCategoryView *v2 = [MTCategoryView mtCategoryView];
-    UIBarButtonItem *regionItem = [[UIBarButtonItem alloc] initWithCustomView:v2];
-
-    self.navigationItem.leftBarButtonItems = @[leftNavItem, cateItem, portritItem, regionItem];
+    self.navigationItem.leftBarButtonItems = arrayM;
 }
 
 #pragma mark - 设置右侧导航栏

@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MTCategoryView : UIView
+@interface MTCategoryView : UIControl
+
+
 + (instancetype)mtCategoryView;
 @end
