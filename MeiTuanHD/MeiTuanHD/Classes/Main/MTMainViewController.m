@@ -10,6 +10,8 @@
 #import "UIButton+MTButton.h"
 #import "MTCategoryView.h"
 #import "MTCategoryChooseView.h"
+#import "MTDistrictChooseController.h"
+
 @interface MTMainViewController ()
 
 @end
@@ -51,7 +53,13 @@
         return;
     } else if (view.tag == 101) {
     // 2. 城市选择按钮
+        MTDistrictChooseController *cityVC = [MTDistrictChooseController new];
+        cityVC.modalPresentationStyle = UIModalPresentationPopover;
+        UIPopoverPresentationController *popover = cityVC.popoverPresentationController;
         
+        popover.sourceView = view;
+        popover.sourceRect = view.bounds;
+        [self presentViewController:cityVC animated:YES completion:nil];
         return;
     } else {
     // 3. 搜索按钮
