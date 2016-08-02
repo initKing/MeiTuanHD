@@ -8,6 +8,8 @@
 
 #import "MTCategoryChooseView.h"
 #import "MTFunctionCategoryModel.h"
+#import "MTFuncCategoryLeftCell.h"
+#import "MTFuncCategoryRightCell.h"
 
 static NSString *categoryId = @"categoryId";
 static NSString *detailId = @"detailId";
@@ -59,13 +61,16 @@ static NSString *detailId = @"detailId";
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell;
+    
     if (tableView == self.CategoryTableView) {
-        cell = [tableView dequeueReusableCellWithIdentifier:categoryId forIndexPath:indexPath];
+        MTFuncCategoryLeftCell *cell = [MTFuncCategoryLeftCell categoryLeftCellWithTableView:tableView cellId:categoryId];
         cell.textLabel.text = _functionCategoryList[indexPath.row].name;
+        cell.imageView.image = [UIImage imageNamed:_functionCategoryList[indexPath.row].icon];
+        cell.imageView.highlightedImage = [UIImage imageNamed:_functionCategoryList[indexPath.row].highlighted_icon];
         return cell;
     } else {
-        cell = [tableView dequeueReusableCellWithIdentifier:detailId forIndexPath:indexPath];
+        MTFuncCategoryRightCell *cell = [MTFuncCategoryRightCell detailTableViewCellWithTableView:tableView cellId:detailId];
+       
         cell.textLabel.text = _selectedModel.subcategories[indexPath.row];
         return cell;
     }

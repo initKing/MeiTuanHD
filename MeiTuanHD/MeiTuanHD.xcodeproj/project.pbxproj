@@ -19,13 +19,14 @@
 		FD7783E81D4F3DA500429F8C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FD7783E71D4F3DA500429F8C /* AppDelegate.m */; };
 		FD7783F01D4F3DA500429F8C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD7783EF1D4F3DA500429F8C /* Assets.xcassets */; };
 		FD7784021D4F3EC600429F8C /* MTBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD7784011D4F3EC600429F8C /* MTBaseViewController.m */; };
-		FD7784051D4F3EDE00429F8C /* MTBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = FD7784041D4F3EDE00429F8C /* MTBaseView.m */; };
 		FD7784081D4F3F0700429F8C /* MTMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD7784071D4F3F0700429F8C /* MTMainViewController.m */; };
 		FD77840B1D4F3F3800429F8C /* MTHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD77840A1D4F3F3800429F8C /* MTHomeViewController.m */; };
 		FD7784131D4F5D4700429F8C /* MTNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD7784121D4F5D4700429F8C /* MTNavigationController.m */; };
 		FDA9008C1D50CA4700796D46 /* MTFunctionCategoryModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FDA900881D50CA4700796D46 /* MTFunctionCategoryModel.m */; };
 		FDA9008D1D50CA4700796D46 /* MTCategoryChooseView.m in Sources */ = {isa = PBXBuildFile; fileRef = FDA9008A1D50CA4700796D46 /* MTCategoryChooseView.m */; };
 		FDA9008E1D50CA4700796D46 /* MTCategoryChooseView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FDA9008B1D50CA4700796D46 /* MTCategoryChooseView.xib */; };
+		FDA900921D50CB8C00796D46 /* MTFuncCategoryLeftCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FDA900911D50CB8C00796D46 /* MTFuncCategoryLeftCell.m */; };
+		FDA900951D50CBB300796D46 /* MTFuncCategoryRightCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FDA900941D50CBB300796D46 /* MTFuncCategoryRightCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,8 +50,6 @@
 		FD7783F41D4F3DA500429F8C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FD7784001D4F3EC600429F8C /* MTBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTBaseViewController.h; sourceTree = "<group>"; };
 		FD7784011D4F3EC600429F8C /* MTBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTBaseViewController.m; sourceTree = "<group>"; };
-		FD7784031D4F3EDE00429F8C /* MTBaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTBaseView.h; sourceTree = "<group>"; };
-		FD7784041D4F3EDE00429F8C /* MTBaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTBaseView.m; sourceTree = "<group>"; };
 		FD7784061D4F3F0700429F8C /* MTMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTMainViewController.h; sourceTree = "<group>"; };
 		FD7784071D4F3F0700429F8C /* MTMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTMainViewController.m; sourceTree = "<group>"; };
 		FD7784091D4F3F3800429F8C /* MTHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTHomeViewController.h; sourceTree = "<group>"; };
@@ -63,6 +62,10 @@
 		FDA900891D50CA4700796D46 /* MTCategoryChooseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTCategoryChooseView.h; sourceTree = "<group>"; };
 		FDA9008A1D50CA4700796D46 /* MTCategoryChooseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTCategoryChooseView.m; sourceTree = "<group>"; };
 		FDA9008B1D50CA4700796D46 /* MTCategoryChooseView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MTCategoryChooseView.xib; sourceTree = "<group>"; };
+		FDA900901D50CB8C00796D46 /* MTFuncCategoryLeftCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTFuncCategoryLeftCell.h; sourceTree = "<group>"; };
+		FDA900911D50CB8C00796D46 /* MTFuncCategoryLeftCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTFuncCategoryLeftCell.m; sourceTree = "<group>"; };
+		FDA900931D50CBB300796D46 /* MTFuncCategoryRightCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTFuncCategoryRightCell.h; sourceTree = "<group>"; };
+		FDA900941D50CBB300796D46 /* MTFuncCategoryRightCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTFuncCategoryRightCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -182,7 +185,6 @@
 			children = (
 				FD04D3921D4F6CA200766FBB /* Category */,
 				FD7783FF1D4F3E8E00429F8C /* BaseViewController */,
-				FD7783FE1D4F3E8E00429F8C /* BaseView */,
 				FD7784061D4F3F0700429F8C /* MTMainViewController.h */,
 				FD7784071D4F3F0700429F8C /* MTMainViewController.m */,
 			);
@@ -196,19 +198,10 @@
 			path = Tools;
 			sourceTree = "<group>";
 		};
-		FD7783FE1D4F3E8E00429F8C /* BaseView */ = {
-			isa = PBXGroup;
-			children = (
-				FD7784031D4F3EDE00429F8C /* MTBaseView.h */,
-				FD7784041D4F3EDE00429F8C /* MTBaseView.m */,
-			);
-			path = BaseView;
-			sourceTree = "<group>";
-		};
 		FD7783FF1D4F3E8E00429F8C /* BaseViewController */ = {
 			isa = PBXGroup;
 			children = (
-				FDA900831D50CA4700796D46 /* districtChoose */,
+				FDA900831D50CA4700796D46 /* DistrictChoose */,
 				FDA900851D50CA4700796D46 /* FuncCategory */,
 				FDA900811D50CA4700796D46 /* CityChoose */,
 				FD7784001D4F3EC600429F8C /* MTBaseViewController.h */,
@@ -234,11 +227,12 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		FDA900831D50CA4700796D46 /* districtChoose */ = {
+		FDA900831D50CA4700796D46 /* DistrictChoose */ = {
 			isa = PBXGroup;
 			children = (
 				FDA900841D50CA4700796D46 /* Model */,
 			);
+			name = DistrictChoose;
 			path = districtChoose;
 			sourceTree = "<group>";
 		};
@@ -253,6 +247,7 @@
 			isa = PBXGroup;
 			children = (
 				FDA900861D50CA4700796D46 /* Model */,
+				FDA9008F1D50CB5D00796D46 /* View */,
 				FDA900891D50CA4700796D46 /* MTCategoryChooseView.h */,
 				FDA9008A1D50CA4700796D46 /* MTCategoryChooseView.m */,
 				FDA9008B1D50CA4700796D46 /* MTCategoryChooseView.xib */,
@@ -267,6 +262,17 @@
 				FDA900881D50CA4700796D46 /* MTFunctionCategoryModel.m */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		FDA9008F1D50CB5D00796D46 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FDA900901D50CB8C00796D46 /* MTFuncCategoryLeftCell.h */,
+				FDA900911D50CB8C00796D46 /* MTFuncCategoryLeftCell.m */,
+				FDA900931D50CBB300796D46 /* MTFuncCategoryRightCell.h */,
+				FDA900941D50CBB300796D46 /* MTFuncCategoryRightCell.m */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -400,11 +406,12 @@
 				FD7784131D4F5D4700429F8C /* MTNavigationController.m in Sources */,
 				FD04D3981D4F721A00766FBB /* MTCategoryView.m in Sources */,
 				FDA9008C1D50CA4700796D46 /* MTFunctionCategoryModel.m in Sources */,
+				FDA900951D50CBB300796D46 /* MTFuncCategoryRightCell.m in Sources */,
 				FD7784081D4F3F0700429F8C /* MTMainViewController.m in Sources */,
 				FD7783E51D4F3DA500429F8C /* main.m in Sources */,
-				FD7784051D4F3EDE00429F8C /* MTBaseView.m in Sources */,
 				FD77840B1D4F3F3800429F8C /* MTHomeViewController.m in Sources */,
 				FDA9008D1D50CA4700796D46 /* MTCategoryChooseView.m in Sources */,
+				FDA900921D50CB8C00796D46 /* MTFuncCategoryLeftCell.m in Sources */,
 				FD7784021D4F3EC600429F8C /* MTBaseViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
