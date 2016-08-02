@@ -9,7 +9,7 @@
 #import "MTMainViewController.h"
 #import "UIButton+MTButton.h"
 #import "MTCategoryView.h"
-
+#import "MTCategoryChooseView.h"
 @interface MTMainViewController ()
 
 @end
@@ -37,6 +37,18 @@
 // 服务分类选择
 - (void)categoryChoose:(MTCategoryView *)view {
     NSLog(@"点击搜索按钮 %s -- %zd", __FUNCTION__, view.tag);
+    MTCategoryChooseView *vc = [MTCategoryChooseView new];
+    
+    vc.modalPresentationStyle = UIModalPresentationPopover;
+    
+    UIPopoverPresentationController *poperVC = vc.popoverPresentationController;
+    
+    poperVC.sourceView = view;
+    poperVC.sourceRect = view.bounds;
+    
+    [self presentViewController:vc animated:YES completion:nil];
+    
+    poperVC.sourceView = view;
 }
 
 #pragma mark - 设置左侧导航栏
@@ -58,7 +70,6 @@
         [arrayM addObject:cateItem];
         view.tag = 100 + i;
     }
-    
     self.navigationItem.leftBarButtonItems = arrayM;
 }
 
