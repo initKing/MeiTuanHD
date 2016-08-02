@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MTCityChooseController">
+            <connections>
+                <outlet property="searchView" destination="heX-pB-Tnh" id="4H1-tb-0WP"/>
+                <outlet property="tableView" destination="sSL-Zz-L4g" id="a7G-il-0cg"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="389" height="417"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="sSL-Zz-L4g">
+                    <rect key="frame" x="0.0" y="44" width="389" height="373"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="eRU-R1-grj"/>
+                        <outlet property="delegate" destination="-1" id="Pcw-kb-kQT"/>
+                    </connections>
+                </tableView>
+                <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="heX-pB-Tnh">
+                    <rect key="frame" x="0.0" y="0.0" width="389" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="b1j-ho-vUw"/>
+                    </constraints>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="PkC-6M-qnC"/>
+                    </connections>
+                </searchBar>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="heX-pB-Tnh" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="00x-Ak-thj"/>
+                <constraint firstAttribute="trailing" secondItem="heX-pB-Tnh" secondAttribute="trailing" id="7kp-ro-8ps"/>
+                <constraint firstItem="sSL-Zz-L4g" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="E4y-r1-wfh"/>
+                <constraint firstAttribute="trailing" secondItem="sSL-Zz-L4g" secondAttribute="trailing" id="H2I-EQ-9zR"/>
+                <constraint firstItem="sSL-Zz-L4g" firstAttribute="top" secondItem="heX-pB-Tnh" secondAttribute="bottom" id="Pd7-Ol-GKr"/>
+                <constraint firstItem="sSL-Zz-L4g" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="oQy-bb-YkY"/>
+                <constraint firstItem="heX-pB-Tnh" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="pgF-dM-9h1"/>
+                <constraint firstAttribute="bottom" secondItem="sSL-Zz-L4g" secondAttribute="bottom" id="vr2-FY-5MY"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="oQy-bb-YkY"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="106.5" y="598.5"/>
+        </view>
+    </objects>
+</document>
