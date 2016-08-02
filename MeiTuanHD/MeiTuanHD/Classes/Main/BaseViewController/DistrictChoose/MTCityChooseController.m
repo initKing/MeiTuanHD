@@ -7,6 +7,7 @@
 //
 
 #import "MTCityChooseController.h"
+#import "UIBarButtonItem+MTBarButtonItem.h"
 
 static NSString *cellId = @"cellId";
 @interface MTCityChooseController ()<UITableViewDelegate, UITableViewDataSource, UISearchBarDelegate>
@@ -46,10 +47,13 @@ static NSString *cellId = @"cellId";
 - (void)setupUI {
     // 注册原型cell
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:cellId];
+    // 设置导航栏呢标题
     self.title = @"切换城市";
     
 }
+
+#pragma mark - 使用自定义的分类方法设置导航栏
 - (void)setupNav {
-    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"btn_navigation_close"] style:UIBarButtonItemStylePlain target:self action:@selector(cancleClicked)];
+    self.navigationItem.leftBarButtonItem = [UIBarButtonItem ch_BarButtonItemWithImage:@"btn_navigation_close" selectedImage:@"btn_navigation_close_hl" target:self action:@selector(cancleClicked)];
 }
 @end
