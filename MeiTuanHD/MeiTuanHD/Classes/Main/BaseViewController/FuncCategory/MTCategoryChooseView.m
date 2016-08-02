@@ -49,6 +49,7 @@ static NSString *detailId = @"detailId";
         _selectedModel = _functionCategoryList[indexPath.row];
         [self.DetailTableView reloadData];
     }
+    
 }
 
 #pragma mark - UITableViewDataSource
@@ -67,6 +68,7 @@ static NSString *detailId = @"detailId";
         cell.textLabel.text = _functionCategoryList[indexPath.row].name;
         cell.imageView.image = [UIImage imageNamed:_functionCategoryList[indexPath.row].icon];
         cell.imageView.highlightedImage = [UIImage imageNamed:_functionCategoryList[indexPath.row].highlighted_icon];
+        
         if (_functionCategoryList[indexPath.row].subcategories) {
             cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
         }

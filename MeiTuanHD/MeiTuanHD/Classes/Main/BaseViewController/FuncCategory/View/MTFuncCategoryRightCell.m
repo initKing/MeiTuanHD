@@ -15,10 +15,9 @@
     
     if (cell == nil) {
         cell = [[MTFuncCategoryRightCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:cellId];
-        
-        cell.backgroundView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"bg_dropdown_rightpart"]];
-        cell.backgroundView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"bg_dropdown_right_selected"]];
     }
+    cell.backgroundView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"bg_dropdown_rightpart"]];
+    cell.selectedBackgroundView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"bg_dropdown_right_selected"]];
     return cell;
 }
 
