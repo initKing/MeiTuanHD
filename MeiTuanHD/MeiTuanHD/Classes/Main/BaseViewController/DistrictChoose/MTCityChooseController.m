@@ -8,7 +8,7 @@
 
 #import "MTCityChooseController.h"
 #import "UIBarButtonItem+MTBarButtonItem.h"
-
+#import "MTDistructModel.h"
 static NSString *cellId = @"cellId";
 @interface MTCityChooseController ()<UITableViewDelegate, UITableViewDataSource, UISearchBarDelegate>
 @property (weak, nonatomic) IBOutlet UISearchBar *searchView;
@@ -17,7 +17,7 @@ static NSString *cellId = @"cellId";
 @end
 
 @implementation MTCityChooseController {
-    NSArray *_cityList;
+    NSArray <MTDistructModel *> *_cityList;
 }
 
 - (void)viewDidLoad {
@@ -25,10 +25,16 @@ static NSString *cellId = @"cellId";
     [self loadData];
     [self setupUI];
     [self setupNav];
+    // 使用宏替换设置颜色
+    self.tableView.tintColor = CHColor(21, 188, 173);
 }
 
+#pragma mark - 加载数据
 - (void)loadData {
+    NSArray *cityArr = [NSArray arrayWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"cityGroups.plist" ofType:nil]];
     
+    // 记录城市数据数组
+    _cityList = [NSArray yy_modelArrayWithClass:NSClassFromString(@"MTDistructModel") json:cityArr];
 }
 
 #pragma mark - 导航栏取消按钮监听方法
@@ -36,20 +42,38 @@ static NSString *cellId = @"cellId";
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
+#pragma mark - UITableViewDelegate
+// 返回组头标题
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
+    return _cityList[section].title;
+}
+
+//显示右侧导航索引
+- (NSArray<NSString *> *)sectionIndexTitlesForTableView:(UITableView *)tableView {
+    // 使用KVC模式 -- _cityList中有多个title对应的值, 所以是个数组
+    return [_cityList valueForKey:@"title"];
+}
+
 #pragma mark - UITableViewDataSource
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    return _cityList.count;
+}
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 10;
+    MTDistructModel *model = _cityList[section];
+    return model.cities.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellId forIndexPath:indexPath];
-    cell.textLabel.text = @(indexPath.row).description;
+    MTDistructModel *model = _cityList[indexPath.section];
+    cell.textLabel.text = model.cities[indexPath.row];
     return cell;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
+
 #pragma mark - 搭建界面
 - (void)setupUI {
     // 注册原型cell
