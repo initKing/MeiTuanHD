@@ -20,6 +20,7 @@
 		FD14F1DE1D50F92600C4E9BD /* MTCityChooseController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD14F1DC1D50F92600C4E9BD /* MTCityChooseController.m */; };
 		FD14F1DF1D50F92600C4E9BD /* MTCityChooseController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD14F1DD1D50F92600C4E9BD /* MTCityChooseController.xib */; };
 		FD14F1E21D51037100C4E9BD /* UIBarButtonItem+MTBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = FD14F1E11D51037100C4E9BD /* UIBarButtonItem+MTBarButtonItem.m */; };
+		FD14F1E51D51711F00C4E9BD /* MTDistructModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FD14F1E41D51711F00C4E9BD /* MTDistructModel.m */; };
 		FD7783E51D4F3DA500429F8C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FD7783E41D4F3DA500429F8C /* main.m */; };
 		FD7783E81D4F3DA500429F8C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FD7783E71D4F3DA500429F8C /* AppDelegate.m */; };
 		FD7783F01D4F3DA500429F8C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD7783EF1D4F3DA500429F8C /* Assets.xcassets */; };
@@ -55,6 +56,8 @@
 		FD14F1DD1D50F92600C4E9BD /* MTCityChooseController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MTCityChooseController.xib; path = MeiTuanHD/Classes/Main/BaseViewController/DistrictChoose/MTCityChooseController.xib; sourceTree = SOURCE_ROOT; };
 		FD14F1E01D51037100C4E9BD /* UIBarButtonItem+MTBarButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+MTBarButtonItem.h"; sourceTree = "<group>"; };
 		FD14F1E11D51037100C4E9BD /* UIBarButtonItem+MTBarButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+MTBarButtonItem.m"; sourceTree = "<group>"; };
+		FD14F1E31D51711F00C4E9BD /* MTDistructModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MTDistructModel.h; path = MeiTuanHD/Classes/Main/BaseViewController/DistrictChoose/Model/MTDistructModel.h; sourceTree = SOURCE_ROOT; };
+		FD14F1E41D51711F00C4E9BD /* MTDistructModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MTDistructModel.m; path = MeiTuanHD/Classes/Main/BaseViewController/DistrictChoose/Model/MTDistructModel.m; sourceTree = SOURCE_ROOT; };
 		FD7783E01D4F3DA500429F8C /* MeiTuanHD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MeiTuanHD.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD7783E41D4F3DA500429F8C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FD7783E61D4F3DA500429F8C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -260,6 +263,8 @@
 		FDA900841D50CA4700796D46 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				FD14F1E31D51711F00C4E9BD /* MTDistructModel.h */,
+				FD14F1E41D51711F00C4E9BD /* MTDistructModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -424,6 +429,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD14F1E51D51711F00C4E9BD /* MTDistructModel.m in Sources */,
 				FD14F1DE1D50F92600C4E9BD /* MTCityChooseController.m in Sources */,
 				FD04D3951D4F6CBF00766FBB /* UIButton+MTButton.m in Sources */,
 				FD7783E81D4F3DA500429F8C /* AppDelegate.m in Sources */,

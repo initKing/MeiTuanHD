@@ -16,12 +16,19 @@ static NSString *cellId = @"cellId";
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @end
 
-@implementation MTCityChooseController
+@implementation MTCityChooseController {
+    NSArray *_cityList;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self loadData];
     [self setupUI];
     [self setupNav];
+}
+
+- (void)loadData {
+    
 }
 
 #pragma mark - 导航栏取消按钮监听方法
